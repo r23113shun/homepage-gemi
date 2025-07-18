@@ -1,0 +1,136 @@
+/* 基本的なリセットとフォント設定 */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333; /* 標準的な文字色 */
+    background-color: #f8f8f8; /* 背景色 */
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #FFDAB9; /* 薄いオレンジ */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #555; /* ヘッダー内の見出し色 */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666; /* ヘッダー内の段落色 */
+}
+
+/* メインコンテンツのスタイル */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #4CAF50; /* セクション見出し色 (緑系) */
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+section ul, section ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+section ul li, section ol li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* 画像を中央揃えにするための設定 */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* リンクのスタイル */
+a {
+    color: #007bff; /* 青系のリンク色 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #FFDAB9; /* 薄いオレンジ */
+    color: #555;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+}
